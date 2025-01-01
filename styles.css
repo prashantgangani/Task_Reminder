@@ -1,0 +1,136 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    text-align: center;
+    color: #2a9d8f;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+
+.task-entry {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #2a9d8f;
+    font-size: 24px;
+    text-align: center;
+}
+
+.input-field {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin: 8px 0;
+    width: 50%;
+}
+
+.input-field:focus {
+    border-color: #2a9d8f;
+    outline: none;
+    
+}
+
+.submit-btn {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 10%;
+}
+
+.submit-btn:hover {
+    background-color: #1f6f65;
+}
+
+.submit-btn:active {
+    background-color: #1a5b53;
+}
+
+
+.task-section {
+    margin-top: 40px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.action-btn {
+    padding: 10px 20px;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.action-btn:hover {
+    background-color: #e56a40;
+}
+
+.task-lists h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.task-list,
+.reminder-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-list li,
+.reminder-list li {
+    background-color: #fafafa;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.task-list li:hover,
+.reminder-list li:hover {
+    background-color: #d3d3d3;
+}
+
+.reminder-list li {
+    background-color: #fff3cd;
+    font-weight: bold;
+    color: #856404;
+}
+
+.no-task-message {
+    font-style: italic;
+    color: #777;
+}
